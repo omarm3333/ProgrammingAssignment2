@@ -47,7 +47,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ##                      access functions
 ##              ...: Additional parameters to pass on to solve function
 ##
-##      Returns: A matrix that is the inverse of source matrix ('x')
+##      Returns: A matrix that is the inverse of source matrix ('x'). Returns NA if matrix in x is not a matrix
+##              or is a matrix but is empty(NA)
 ##              
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
